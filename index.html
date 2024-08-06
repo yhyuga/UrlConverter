@@ -26,7 +26,7 @@
     function convertUrl(e) {
       e.preventDefault()
 
-      const url = document.getElementById('url').value
+      const url = document.getElementById('url').value.trim()
       const convertedUrl = `https://typica.coffee/cdn-cgi/image/format=webp,quality=50/${encodeURIComponent(url)}`
 
       document.getElementById('convertedUrl').value = convertedUrl
