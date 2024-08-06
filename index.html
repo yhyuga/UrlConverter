@@ -30,6 +30,7 @@
       const convertedUrl = `https://typica.coffee/cdn-cgi/image/format=webp,quality=50/${encodeURIComponent(url)}`
 
       document.getElementById('convertedUrl').value = convertedUrl
+      navigator.clipboard.writeText(convertedUrl)
     }
 
     document.getElementById('form001').addEventListener('submit', convertUrl)
